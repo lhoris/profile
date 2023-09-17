@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: class-netpol
+  namespace: elearning-ns
+spec:
+  podSelector:
+    matchLabels:
+      category: edu
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              role: management
+        - podSelector:
+            matchLabels:
+              group: student
+          namespaceSelector: {}

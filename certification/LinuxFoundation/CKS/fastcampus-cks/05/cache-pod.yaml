@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cache-pod
+spec:
+  containers:
+  - name: cache
+    image: redis
+    volumeMounts:
+    - name: secret-volume
+      mountPath: "/etc/secret"
+  volumes:
+  - name: secret-volume
+    secret:
+      secretName: db2-secret
