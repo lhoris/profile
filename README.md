@@ -9,6 +9,6 @@
 |Highcharts JS v7.2.1 (2019-10-31)|Highcharts v11.3.0 (최신버전적용)|
 |Report Designer 5.0|Report Designer 8.0|
 |Xplatform|Nexacro N v24|
-|UXStudio922|NexacroN Studio|
-|Eclipse Kepler|Eclipse 4.16 or STS 4.7.0|
+|UXStudio922|Nexacro N Studio|
+|Eclipse Kepler|Eclipse 4.16 or STS 4.7.0 or IntelliJ|
 |u-Cube|u-Cube|
